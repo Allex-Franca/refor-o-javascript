@@ -195,7 +195,7 @@ if (jogador) {
         console.log("Você perdeu!");
     }
 }
-*/
+
 
 
 // EXERCÍCIO 8 - Sistema de notas
@@ -224,7 +224,7 @@ else if (nota >= 3 && nota <= 4){
 else{
     console.log("você tirou F")
 }
-
+*/
 
 
 // ============================================================
@@ -240,6 +240,11 @@ else{
 //   "5 x 2 = 10"
 //   ... até "5 x 10 = 50"
 // ------------------------------------------------------------
+let N = Number(prompt("escreva o numero da sua tabuada: "))
+for (let i = 1; i <= 10; i++) {
+    console.log(N+"x"+i+"="+(N*i));
+}
+
 
 
 
