@@ -224,7 +224,7 @@ else if (nota >= 3 && nota <= 4){
 else{
     console.log("você tirou F")
 }
-*/
+
 
 
 // ============================================================
@@ -245,7 +245,7 @@ for (let i = 1; i <= 10; i++) {
     console.log(N+"x"+i+"="+(N*i));
 }
 
-
+*/
 
 
 
@@ -254,7 +254,9 @@ for (let i = 1; i <= 10; i++) {
 // Mostre cada número no console.
 // No final, mostre "Feliz Ano Novo!" (ou qualquer mensagem).
 // ------------------------------------------------------------
-
+for (let i = 1; i <= 10; i++)
+    console.log(i)
+    console.log("Feliz Ano Novo!!!")
 
 
 
