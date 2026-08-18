@@ -123,7 +123,7 @@ if (idade >=18){
 else{
     console.log("você tem",idade,",você não é maior de idade")
 }
-*/
+
 
 // EXERCÍCIO 6 - Calculadora de IMC
 // Crie variáveis para peso (em kg) e altura (em metros).
@@ -150,7 +150,7 @@ else{
     console.log("seu IMC é",IMC,", você é o curry")
 }
 
-
+*/
 // EXERCÍCIO 7 - Pedra, papel e tesoura
 // Crie uma variável com sua jogada ("pedra", "papel" ou "tesoura").
 // Faça o computador escolher aleatoriamente uma jogada.
@@ -159,7 +159,42 @@ else{
 //   let computador = opcoes[Math.floor(Math.random() * 3)]
 // Compare as jogadas e mostre quem ganhou.
 // ------------------------------------------------------------
+console.log("1-pedra\n2-papel\n3-papel")
+let opcoes = ['pedra', 'papel', 'tesoura']
+let computador = opcoes[Math.floor(Math.random() * 3)]
+let opcao = prompt("escolha uma das opções acima: ")
+let jogador;
+switch(opcao){
+        case "1":
+        jogador = "pedra";
+        break;
 
+    case "2":
+        jogador = "papel";
+        break;
+
+    case "3":
+        jogador = "tesoura";
+        break;
+}
+if (jogador) {
+    console.log("Você escolheu:", jogador);
+    console.log("O computador escolheu:", computador);
+
+    if (jogador === computador) {
+        console.log("Empate! Tente novamente.");
+    } 
+    else if (
+        (jogador === "pedra" && computador === "tesoura") ||
+        (jogador === "papel" && computador === "pedra") ||
+        (jogador === "tesoura" && computador === "papel")
+    ) {
+        console.log("Você ganhou!");
+    } 
+    else {
+        console.log("Você perdeu!");
+    }
+}
 
 
 
