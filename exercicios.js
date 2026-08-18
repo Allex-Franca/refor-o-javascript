@@ -21,6 +21,7 @@ const prompt = require("prompt-sync")();
 // Crie 2 variáveis com números e mostre no console
 // o resultado da soma, subtração, multiplicação e divisão.
 // ------------------------------------------------------------
+
 let N1 = ""
 let N2 = ""
 let soma = ""
@@ -63,7 +64,9 @@ switch(opcao){
 // Converta para Fahrenheit e mostre no console.
 // Fórmula: F = C * 9/5 + 32
 // ------------------------------------------------------------
-
+let C = Number(prompt("digite a temperatuda em celcius:"))
+let F = Number(C * 9/5 + 32)
+console.log("convertendo para fahrenheit é",F)
 
 
 
