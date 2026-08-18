@@ -150,7 +150,7 @@ else{
     console.log("seu IMC é",IMC,", você é o curry")
 }
 
-*/
+
 // EXERCÍCIO 7 - Pedra, papel e tesoura
 // Crie uma variável com sua jogada ("pedra", "papel" ou "tesoura").
 // Faça o computador escolher aleatoriamente uma jogada.
@@ -195,7 +195,7 @@ if (jogador) {
         console.log("Você perdeu!");
     }
 }
-
+*/
 
 
 // EXERCÍCIO 8 - Sistema de notas
@@ -207,7 +207,23 @@ if (jogador) {
 //   4 e 3    = "D"
 //   2, 1, 0  = "F"
 // ------------------------------------------------------------
-
+let nota = prompt("qual sua nota: ")
+nota = Math.max(0, Math.min(10, nota));
+if (nota >= 9 && nota <= 10){
+    console.log("você tirou A")
+}
+else if (nota >= 7 && nota <= 8){
+    console.log("você tirou B")
+}
+else if (nota >= 5 && nota <= 6){
+    console.log("você tirou C")
+}
+else if (nota >= 3 && nota <= 4){
+    console.log("você tirou D")
+}
+else{
+    console.log("você tirou F")
+}
 
 
 
