@@ -104,7 +104,7 @@ if (media >= 7){
 else{
     console.log("Aluno Reprovado, sua media é",media)
 }
-*/
+
 
 // ============================================================
 //  BLOCO 2 - CONDICIONAIS (if/else, switch)
@@ -123,6 +123,7 @@ if (idade >=18){
 else{
     console.log("você tem",idade,",você não é maior de idade")
 }
+*/
 
 // EXERCÍCIO 6 - Calculadora de IMC
 // Crie variáveis para peso (em kg) e altura (em metros).
@@ -133,8 +134,21 @@ else{
 //   25 até 29.9    = "Sobrepeso"
 //   30 ou mais     = "Obesidade"
 // ------------------------------------------------------------
-
-
+let peso = Number(prompt("digite seu peso: "))
+let altura = Number(prompt("digite sua altura: "))
+let IMC = Number (peso/(altura*altura))
+if (IMC < 18.5){
+    console.log("seu IMC é",IMC,", você esta abaixo do peso")
+}
+else if (IMC >=18.5 && IMC <= 24.9){
+    console.log("seu IMC é",IMC,", você tem peso normal")
+}
+else if (IMC >=25 && IMC <= 29.9){
+    console.log("seu IMC é",IMC,", você tem sobrepeso")
+}
+else{
+    console.log("seu IMC é",IMC,", você é o curry")
+}
 
 
 // EXERCÍCIO 7 - Pedra, papel e tesoura
