@@ -333,7 +333,7 @@ function ehPrimo(N) {
 }
 let N = Number(prompt("digite um numero:"))
 console.log(ehPrimo(N))
-*/
+
 // EXERCÍCIO 15 - Inverter string
 // Crie uma função chamada "inverter" que recebe uma string
 // e retorna ela invertida.
@@ -347,7 +347,7 @@ function inverter(palavra){
 let palavra = prompt("escreva uma palavra: ")
 console.log(palavra)
 console.log(inverter(palavra));
-
+*/
 
 // EXERCÍCIO 16 - Contar vogais
 // Crie uma função chamada "contarVogais" que recebe uma
@@ -356,8 +356,18 @@ console.log(inverter(palavra));
 // Dica: transforme em minúscula com .toLowerCase()
 // e verifique cada letra com um for.
 // ------------------------------------------------------------
-
-
+function contarVogais(palavra) {
+  let contador = 0;
+  for (let letra of palavra.toLowerCase()) {
+    if ("aeiou".includes(letra)) {
+      contador++;
+    }
+  }
+  return contador;
+}
+let palavra = prompt("Digite uma palavra:");
+let resultado = contarVogais(palavra);
+console.log(resultado);
 
 
 // ============================================================
