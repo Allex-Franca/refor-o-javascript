@@ -67,7 +67,7 @@ switch(opcao){
 let C = Number(prompt("digite a temperatuda em celcius:"))
 let F = Number(C * 9/5 + 32)
 console.log("convertendo para fahrenheit é",F)
-*/
+
 
 // EXERCÍCIO 3 - Par ou ímpar
 // Crie uma variável com um número.
@@ -82,7 +82,7 @@ if(N % 2 === 0){
 else{
     console.log(N,"é impar")
 }
-
+*/
 
 
 // EXERCÍCIO 4 - Média de notas
@@ -91,8 +91,19 @@ else{
 // Se a média for >= 7, mostre "Aprovado".
 // Se não, mostre "Reprovado".
 // ------------------------------------------------------------
-
-
+let nota1 = Number(prompt("digite a primeira nota: "))
+nota1 = Math.max(0, Math.min(10, nota1));
+let nota2 = Number(prompt("digite a primeira nota: "))
+nota2 = Math.max(0, Math.min(10, nota1));
+let nota3 = Number(prompt("digite a primeira nota: "))
+nota3 = Math.max(0, Math.min(10, nota1));
+let media = Number(nota1+nota2+nota3)/3
+if (media >= 7){
+    console.log("Aluno Aprovado, sua media é",media)
+}
+else{
+    console.log("Aluno Reprovado, sua media é",media)
+}
 
 
 // ============================================================
