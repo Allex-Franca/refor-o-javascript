@@ -21,7 +21,7 @@ const prompt = require("prompt-sync")();
 // Crie 2 variáveis com números e mostre no console
 // o resultado da soma, subtração, multiplicação e divisão.
 // ------------------------------------------------------------
-
+/*
 let N1 = ""
 let N2 = ""
 let soma = ""
@@ -67,8 +67,7 @@ switch(opcao){
 let C = Number(prompt("digite a temperatuda em celcius:"))
 let F = Number(C * 9/5 + 32)
 console.log("convertendo para fahrenheit é",F)
-
-
+*/
 
 // EXERCÍCIO 3 - Par ou ímpar
 // Crie uma variável com um número.
@@ -76,7 +75,13 @@ console.log("convertendo para fahrenheit é",F)
 // Dica: use o operador % (resto da divisão)
 // Se numero % 2 === 0, é par.
 // ------------------------------------------------------------
-
+let N = Number(prompt("digite um numero: "))
+if(N % 2 === 0){
+    console.log(N,"é par")
+}
+else{
+    console.log(N,"é impar")
+}
 
 
 
