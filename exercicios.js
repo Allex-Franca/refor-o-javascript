@@ -270,7 +270,7 @@ let n = Number(prompt("escreva um numero:"))
 for(let i = 0;i <= n; i++){
     console.log(n+i)
 }
-*/
+
 
 
 // EXERCÍCIO 12 - Adivinhe o número
@@ -293,7 +293,7 @@ while (palpite !== secreto) {
         console.log("Parabéns! Acertou!");
     }
 }
-
+*/
 // ============================================================
 //  BLOCO 4 - FUNÇÕES
 // ============================================================
@@ -305,7 +305,11 @@ while (palpite !== secreto) {
 // Chame a função e mostre o resultado no console.
 // Exemplo: saudacao("Maria") retorna "Olá, Maria!"
 // ------------------------------------------------------------
-
+function saudacao(nome){
+    return nome
+}
+let nome = prompt("digite um nome:")
+console.log(saudacao("olá "+nome))
 
 
 
