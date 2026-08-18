@@ -310,7 +310,7 @@ function saudacao(nome){
 }
 let nome = prompt("digite um nome:")
 console.log(saudacao("olá "+nome))
-*/
+
 
 
 // EXERCÍCIO 14 - Número primo
@@ -333,7 +333,7 @@ function ehPrimo(N) {
 }
 let N = Number(prompt("digite um numero:"))
 console.log(ehPrimo(N))
-
+*/
 // EXERCÍCIO 15 - Inverter string
 // Crie uma função chamada "inverter" que recebe uma string
 // e retorna ela invertida.
@@ -341,8 +341,12 @@ console.log(ehPrimo(N))
 // Dica: use split('') para virar array, reverse() para
 // inverter, e join('') para voltar a ser string.
 // ------------------------------------------------------------
-
-
+function inverter(palavra){
+    return palavra.split("").reverse().join("")
+}
+let palavra = prompt("escreva uma palavra: ")
+console.log(palavra)
+console.log(inverter(palavra));
 
 
 // EXERCÍCIO 16 - Contar vogais
