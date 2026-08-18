@@ -245,7 +245,7 @@ for (let i = 1; i <= 10; i++) {
     console.log(N+"x"+i+"="+(N*i));
 }
 
-*/
+
 
 
 
@@ -259,14 +259,17 @@ for (let i = 1; i <= 10; i++)
     console.log("Feliz Ano Novo!!!")
 
 
-
+*/
 // EXERCÍCIO 11 - Somar números
 // Crie uma variável N com um número qualquer.
 // Use um for para somar todos os números de 1 até N.
 // Mostre o resultado no console.
 // Exemplo: se N = 5, resultado = 1+2+3+4+5 = 15
 // ------------------------------------------------------------
-
+let n = Number(prompt("escreva um numero:"))
+for(let i = 0;i <= n; i++){
+    console.log(n+i)
+}
 
 
 
