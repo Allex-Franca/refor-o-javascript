@@ -259,7 +259,7 @@ for (let i = 1; i <= 10; i++)
     console.log("Feliz Ano Novo!!!")
 
 
-*/
+
 // EXERCÍCIO 11 - Somar números
 // Crie uma variável N com um número qualquer.
 // Use um for para somar todos os números de 1 até N.
@@ -270,7 +270,7 @@ let n = Number(prompt("escreva um numero:"))
 for(let i = 0;i <= n; i++){
     console.log(n+i)
 }
-
+*/
 
 
 // EXERCÍCIO 12 - Adivinhe o número
@@ -281,9 +281,18 @@ for(let i = 0;i <= n; i++){
 // Quando acertar, mostre "Parabéns! Acertou!"
 // Dica: use prompt() para pedir o palpite do usuário.
 // ------------------------------------------------------------
-
-
-
+let secreto = Math.floor(Math.random() * 10) + 1;
+let palpite = 0;
+while (palpite !== secreto) {
+    palpite = Number(prompt("Adivinhe o número de 1 a 10:"));
+    if (palpite < secreto) {
+        console.log("maior!");
+    } else if (palpite > secreto) {
+        console.log("menor!");
+    } else {
+        console.log("Parabéns! Acertou!");
+    }
+}
 
 // ============================================================
 //  BLOCO 4 - FUNÇÕES
