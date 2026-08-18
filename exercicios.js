@@ -82,7 +82,7 @@ if(N % 2 === 0){
 else{
     console.log(N,"é impar")
 }
-*/
+
 
 
 // EXERCÍCIO 4 - Média de notas
@@ -104,7 +104,7 @@ if (media >= 7){
 else{
     console.log("Aluno Reprovado, sua media é",media)
 }
-
+*/
 
 // ============================================================
 //  BLOCO 2 - CONDICIONAIS (if/else, switch)
@@ -116,9 +116,13 @@ else{
 // Se for >= 18, mostre "Maior de idade".
 // Se não, mostre "Menor de idade".
 // ------------------------------------------------------------
-
-
-
+let idade = prompt("digite sua idade: ")
+if (idade >=18){
+    console.log("você tem",idade,",você e maior de idade")
+}
+else{
+    console.log("você tem",idade,",você não é maior de idade")
+}
 
 // EXERCÍCIO 6 - Calculadora de IMC
 // Crie variáveis para peso (em kg) e altura (em metros).
