@@ -293,7 +293,7 @@ while (palpite !== secreto) {
         console.log("Parabéns! Acertou!");
     }
 }
-*/
+
 // ============================================================
 //  BLOCO 4 - FUNÇÕES
 // ============================================================
@@ -310,7 +310,7 @@ function saudacao(nome){
 }
 let nome = prompt("digite um nome:")
 console.log(saudacao("olá "+nome))
-
+*/
 
 
 // EXERCÍCIO 14 - Número primo
@@ -320,9 +320,19 @@ console.log(saudacao("olá "+nome))
 // Dica: use um for de 2 até numero-1 e verifique se
 // algum divide o número sem resto (numero % i === 0).
 // ------------------------------------------------------------
-
-
-
+function ehPrimo(N) {
+    if (N < 2) {
+        return false;
+    }
+    for (let i = 2; i < N; i++) {
+        if (N % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+let N = Number(prompt("digite um numero:"))
+console.log(ehPrimo(N))
 
 // EXERCÍCIO 15 - Inverter string
 // Crie uma função chamada "inverter" que recebe uma string
